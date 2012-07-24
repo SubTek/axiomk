@@ -1,4 +1,4 @@
-CROSS_COMPILE=/home/infinity/android/toolchains/arm-eabi-4.4.3/bin/arm-eabi-
+CROSS_COMPILE=/home/infinity/android/toolchains/bin/arm-eabi-
 INITRAMFS_DIR=ramdisk.gz
 KERNEL_NAME=AxiomK
 KERNEL_VNUMBER=1.2b
