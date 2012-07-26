@@ -1,7 +1,7 @@
 CROSS_COMPILE=/home/infinity/android/toolchains/bin/arm-eabi-
-INITRAMFS_DIR=ramdisk.gz
+INITRAMFS_DIR=/home/infinity/android/ramdisk/ramdisk.gz
 KERNEL_NAME=AxiomK
-KERNEL_VNUMBER=1.2b
+KERNEL_VNUMBER=1.0
 
 # DO NOT MODIFY BELOW THIS LINE
 CURRENT_DIR=`pwd`

@@ -722,7 +722,6 @@ static inline notrace void rcu_read_unlock_sched_notrace(void)
 			smp_wmb(); \
 		(p) = (v); \
 	})
-
 /* Infrastructure to implement the synchronize_() primitives. */
 
 struct rcu_synchronize {

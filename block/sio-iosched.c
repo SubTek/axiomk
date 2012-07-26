@@ -273,12 +273,12 @@ static void
 sio_exit_queue(struct elevator_queue *e)
 {
 	struct sio_data *sd = e->elevator_data;
-
+/*
 	BUG_ON(!list_empty(&sd->fifo_list[SYNC][READ]));
 	BUG_ON(!list_empty(&sd->fifo_list[SYNC][WRITE]));
 	BUG_ON(!list_empty(&sd->fifo_list[ASYNC][READ]));
 	BUG_ON(!list_empty(&sd->fifo_list[ASYNC][WRITE]));
-
+*/
 	/* Free structure */
 	kfree(sd);
 }

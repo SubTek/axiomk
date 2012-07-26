@@ -7,7 +7,7 @@
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details. 
+ * GNU General Public License for more details.
  *
  */
 #include <linux/kernel.h>
@@ -1443,7 +1443,7 @@ static struct camera_flash_info msm_camera_sensor_s5k3h2yx_flash_info = {
 
 static struct camera_flash_cfg msm_camera_sensor_s5k3h2yx_flash_cfg = {
 	.low_temp_limit		= 5,
-	.low_cap_limit		= 5,
+	.low_cap_limit		= 15,
 	.flash_info             = &msm_camera_sensor_s5k3h2yx_flash_info,
 };
 /* Andrew_Cheng linear led 20111205 ME */
@@ -5165,7 +5165,7 @@ static struct pm8xxx_led_configure pm8921_led_info[] = {
 		.duites_size 	= 8,
 		.duty_time_ms 	= 64,
 		.lut_flag 	= PM_PWM_LUT_RAMP_UP | PM_PWM_LUT_PAUSE_HI_EN,
-		.out_current    = 2,
+		.out_current    = 40,
 		.duties		= {0, 9, 18, 27, 36, 45, 54, 60,
 				60, 54, 45, 36, 27, 18, 9, 0,
 				0, 0, 0, 0, 0, 0, 0, 0,
