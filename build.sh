@@ -1,5 +1,5 @@
 CROSS_COMPILE=/home/infinity/android/toolchains/bin/arm-eabi-
-INITRAMFS_DIR=/home/infinity/android/ramdisk/ramdisk.gz
+INITRAMFS_DIR=ramdisk.gz
 KERNEL_NAME=AxiomK
 KERNEL_VNUMBER=1.0
 
@@ -33,5 +33,5 @@ make ARCH=arm -j$NB_CPU CROSS_COMPILE=$CROSS_COMPILE
 # Make boot.img
 echo "Making boot.img"
 cp arch/arm/boot/zImage .
-mkbootimg --kernel zImage --ramdisk $INITRAMFS_DIR --base 80400000 --ramdiskaddr 81800000 --cmdline console=ttyHSL0,115200,n8 -o boot.img
+mkbootimg --kernel zImage --ramdisk ramdisk.gz --base 80400000 --ramdiskaddr 81800000 --cmdline console=ttyHSL0,115200,n8 -o boot.img
 echo "Done."
